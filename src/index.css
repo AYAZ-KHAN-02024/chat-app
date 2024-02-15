@@ -1,0 +1,126 @@
+body{
+  background-image: linear-gradient(to right, #453b5f, #125451);
+  color: aliceblue;
+  font-family: sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+  overscroll-behavior: none;
+  overflow: scroll;
+  overflow-x: hidden;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  
+ 
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar {
+  width: 3px;
+  background-color: rgba(128, 128, 128, 0.186);
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.505);
+}
+
+button:active{
+  scale: .9;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.app{
+  width: 760px;
+  margin: auto;
+ 
+  
+}
+
+/* header  */
+
+.header{
+  background-color: rgb(30, 43, 65);
+  padding: 10px;
+  width: 760px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+}
+
+button{
+  padding: 8px;
+  background-color: aliceblue;
+  border-radius: 4px;
+  border: none;
+  font-weight: bold;
+  font-size: large;
+}
+
+
+
+/* message area  */
+.user_message{
+  /* background-color: rgb(16, 33, 28); */
+  background-image: linear-gradient(to right, #192b32, #233e3b);
+  width: 760px;
+  position: relative;
+  top:50px;
+  min-height: 100vh;
+  padding-bottom: 70px;
+  padding-top: 20px;
+  
+}
+/* form-area */
+
+
+
+.typing{
+  width: 760px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  font-size: large;
+}
+
+form button{
+  width: 18%;
+  padding: 10px;
+  background-color: rgb(32, 25, 47);
+  font-size: large;
+  color: aliceblue;
+}
+input{
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(22, 34, 49);
+  font-weight: bold;
+  width: 80%;
+  color: aquamarine;
+  font-size: large;
+}
+
+@media (max-width:765px) {
+  
+  .app{
+    width: 400px;
+  }
+ 
+
+}
